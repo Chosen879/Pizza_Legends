@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza Legends</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
+    <!-- Overworld styles -->
+    <link href="/styles/global.css" type="text/css" rel="stylesheet">
+    <link href="/styles/TextMessage.css" type="text/css" rel="stylesheet">
+    <link href="/styles/SceneTransition.css" type="text/css" rel="stylesheet">
+    <link href="/styles/KeyboardMenu.css" type="text/css" rel="stylesheet">
+    <link href="/styles/Hud.css" type="text/css" rel="stylesheet">
+    <link href="/styles/TitleScreen.css" type="text/css" rel="stylesheet">
+    <!-- Battle css -->
+    <link href="/styles/Battle.css" type="text/css" rel="stylesheet">
+    <link href="/styles/Combatant.css" type="text/css" rel="stylesheet">
+    <link href="/styles/SubmissionMenu.css" type="text/css" rel="stylesheet">
+    <link href="/styles/Team.css" type="text/css" rel="stylesheet">
+    <link href="/styles/Menus.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="game-container">
+      <canvas class="game-canvas" width="352" height="198"></canvas>
+    </div>
+
+    <!-- Content -->
+    <script src="/Content/pizzas.js"></script>
+    <script src="/Content/actions.js"></script>
+    <script src="/Content/enemies.js"></script>
+
+    <!-- State -->
+    <script src="/State/PlayerState.js"></script>
+
+    <!-- Scripts -->
+    <script src="Utis&other/utils.js"></script>
+    <script src="Overworld/DirectionInput.js"></script>
+    <script src="Overworld/Overworld.js"></script>
+    <script src="Overworld/GameObject.js"></script>
+    <script src="Overworld/Person.js"></script>
+    <script src="Overworld/PizzaStone.js"></script>
+    <script src="Overworld/Sprite.js"></script>
+    <script src="Overworld/OverworldMap.js"></script>
+    <script src="Overworld/OverworldEvent.js"></script>
+    <script src="Utis&other/TextMessage.js"></script>
+    <script src="Utis&other/KeyPressListener.js"></script>
+    <script src="Utis&other/RevealingText.js"></script>
+    <script src="Utis&other/SceneTransition.js"></script>
+    <script src="Utis&other/KeyboardMenu.js"></script>
+    <script src="Overworld/Hud.js"></script>
+    <script src="Overworld/PauseMenu.js"></script>
+    <script src="Overworld/CraftingMenu.js"></script>
+    <script src="Utis&other/Progress.js"></script>
+    <script src="Utis&other/TitleScreen.js"></script>
+    <script src="Music/GameMusic.js"></script>
+
+    <!-- Battle -->
+    <script src="/Battle/Battle.js"></script>
+    <script src="/Battle/Combatant.js"></script>
+    <script src="/Battle/Team.js"></script>
+    <script src="/Battle/SubmissionMenu.js"></script>
+    <script src="/Battle/ReplacementMenu.js"></script>
+    <script src="/Battle/BattleEvent.js"></script>
+    <script src="/Battle/TurnCycle.js"></script>
+    <script src="/Battle/BattleAnimations.js"></script>
+
+    <script src="Utis&other/init.js"></script>
+
+  </body>
+</html>
