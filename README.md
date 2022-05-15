@@ -1,5 +1,7 @@
 Name: Pizza Legends
 
-description: A game about battling pizzas
+Description: A rpg about battling pizzas, making friends, and having fun.
 
-updates: Nothing yet
+Updates: 
+
+Issues: Game is in a state of unplayability, broken to the point of disater, will be fixed by May 15, 2022 at 4pm
