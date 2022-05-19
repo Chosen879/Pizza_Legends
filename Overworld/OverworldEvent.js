@@ -13,7 +13,7 @@ class OverworldEvent {
     }, {
       type: "stand",
       direction: this.event.direction,
-      time: this.event.wait
+      wait: this.event.wait
     })
     
     //Set up a handler to complete when correct person is done walking, then resolve the event
@@ -160,6 +160,7 @@ class OverworldEvent {
     })
     resolve()
   }
+
 
   init() {
     return new Promise(resolve => {

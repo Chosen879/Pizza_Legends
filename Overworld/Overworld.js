@@ -134,7 +134,7 @@ class Overworld {
 
 
   this.map.startCutscene([
-    { type: "addStoryFlag", flag: "DOING_FIRST_CUTSCENE" },
+    // { type: "addStoryFlag", flag: "DOING_FIRST_CUTSCENE" },
     // {
     //   type: "createGameObject",
     //   name: "beth",
@@ -146,8 +146,8 @@ class Overworld {
     //     direction: "up"
     //   })
     // },
-    // { type: "textMessage", text: "(After many hours of training, your pizza makeing skills are nearly perfect)" },
-    // { type: "textMessage", text: "(You can use any topping, and you're crusts are amazing)" },
+    // { type: "textMessage", text: "(After many hours of training, your pizza making skills are nearly perfect)" },
+    // { type: "textMessage", text: "(You have mastered the use of any topping, and you can knead dough any style thats ever been imagined)" },
     // { type: "walk", who: "beth", direction: "up" },
     // { type: "walk", who: "beth", direction: "up" },
     // { type: "walk", who: "beth", direction: "up" },
@@ -158,19 +158,22 @@ class Overworld {
     // { type: "walk", who: "beth", direction: "right" },
     // { type: "walk", who: "beth", direction: "right" },
     // { type: "textMessage", text: "Beth: Dude, hurry up! The reveal is starting soon!!!"},
+    // { type: "stand", who: "hero", direction: "left", wait: 200 },
     // { type: "walk", who: "beth", direction: "left" },
     // { type: "walk", who: "beth", direction: "left" },
     // { type: "walk", who: "beth", direction: "left" },
     // { type: "walk", who: "beth", direction: "left" },
-    // { type: "walk", who: "beth", direction: "down" },
-    // { type: "walk", who: "beth", direction: "down" },
-    // { type: "stand", who: "beth", direction: "up", time: 200 },
-    // { type: "textMessage", text: "Beth: Hurry up slowpoke!!!" },
-    // { type: "walk", who: "beth", direction: "down" },
-    // { type: "walk", who: "beth", direction: "down" },
-    // { type: "walk", who: "beth", direction: "down" },
-    // { type: "deleteGameObject", name: "beth",  map: window.OverworldMaps[this.progress.mapId], },
-    // { type: "textMessage", text: "(You batter follow her)" },
+    // { type: "textMessage", text: "You: Wait up, you havn't even told me your name" },
+    // { type: "walk", who: "beth", direction: "right"},
+    // { type: "walk", who: "beth", direction: "right"},
+    // { type: "walk", who: "beth", direction: "right"},
+    // { type: "textMessage", text: "Beth: Hello, my name is Beth" },
+    // { type: "textMessage", text: "You: Hello, my name is John" },
+    // { type: "textMessage", text: "You: Can you please tell me whats going on" },
+    // { type: "textMessage", text: "Beth: The biggest pizza company in the world just descovered the biggest piece of pizza tech in over 50 years"},
+    // { type: "textMessage", text: "You: Oh, then I guess we should get a move on" },
+    // { type: "changeMap", map: "DemoRoom", }
+
   ])
 
  }

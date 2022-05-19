@@ -59,7 +59,7 @@ class Person extends GameObject {
           whoId: this.id
         })
         this.isStanding = false;
-      }, behavior.time)
+      }, behavior.wait)
     }
 
   }
