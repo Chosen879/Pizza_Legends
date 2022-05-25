@@ -41,6 +41,7 @@ class Sprite {
   }
 
   get frame() {
+    console.log(this.currentAnimation)
     return this.animations[this.currentAnimation][this.currentAnimationFrame]
   }
 

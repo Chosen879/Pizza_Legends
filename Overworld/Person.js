@@ -23,7 +23,7 @@ class Person extends GameObject {
       if (!state.map.isCutscenePlaying && this.isPlayerControlled && state.arrow) {
         this.startBehavior(state, {
           type: "walk",
-          direction: state.arrow
+          direction: state.arrow 
         })
       }
       this.updateSprite(state);
@@ -79,6 +79,7 @@ class Person extends GameObject {
   }
 
   updateSprite() {
+    if (!this.direction) return
     if (this.movingProgressRemaining > 0) {
       this.sprite.setAnimation("walk-"+this.direction);
       return;

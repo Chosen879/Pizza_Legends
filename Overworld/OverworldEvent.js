@@ -161,6 +161,17 @@ class OverworldEvent {
     resolve()
   }
 
+  showTutorial(resolve) {
+    const menu = new TutorialMenu({
+      onComplete: () => {
+        resolve()
+      }
+    })
+    menu.init(document.querySelector(".game-container"))
+  }
+
+  
+
 
   init() {
     return new Promise(resolve => {

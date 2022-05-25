@@ -25,3 +25,12 @@
   text-align:center;
   border-bottom: 1px solid #A48465;
 }
+
+.overlayMenu p {
+  font-size: 8px;
+  color: var(--menu-font-color);
+  margin:0;
+  padding: 2px 0;
+  text-align:center;
+  border-bottom: 1px solid #A48465;
+}

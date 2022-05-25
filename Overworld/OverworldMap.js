@@ -121,6 +121,7 @@ window.OverworldMaps = {
         isPlayerControlled: true,
         x: utils.withGrid(5),
         y: utils.withGrid(6),
+        direction: "down"
       }),
       npcA: new Person({
         src: "./images/characters/people/npc4.png",
