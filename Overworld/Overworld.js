@@ -138,17 +138,17 @@ class Overworld {
 
   this.map.startCutscene([
     { type: "addStoryFlag", flag: "DOING_FIRST_CUTSCENE" },
-    // {
-    //   type: "createGameObject",
-    //   name: "beth",
-    //   map: window.OverworldMaps[this.progress.mapId],
-    //   object: new Person({
-    //     src: "./images/characters/people/npc1.png",
-    //     x: utils.withGrid(5),
-    //     y: utils.withGrid(10),
-    //     direction: "up"
-    //   })
-    // },
+    {
+      type: "createGameObject",
+      name: "beth",
+      map: window.OverworldMaps[this.progress.mapId],
+      object: new Person({
+        src: "./images/characters/people/npc1.png",
+        x: utils.withGrid(5),
+        y: utils.withGrid(10),
+        direction: "up"
+      })
+    },
     // { type: "textMessage", text: "(After many hours of training, your pizza making skills are nearly perfect)" },
     // { type: "textMessage", text: "(You have mastered the use of any topping, and you can knead dough any style thats ever been imagined)" },
     { type: "walk", who: "beth", direction: "up" },
