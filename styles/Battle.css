@@ -17,6 +17,10 @@
 .Battle.kitchen {
   background-image: url(/images/maps/KitchenBattle.png);
 }
+.Battle.demo-room {
+  background-image: url(/images/maps/DemoBattle.png);
+}
+
 
 
 .Battle_hero, .Battle_enemy {

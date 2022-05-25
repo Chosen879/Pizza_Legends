@@ -119,8 +119,8 @@ window.OverworldMaps = {
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
-        x: utils.withGrid(5),
-        y: utils.withGrid(6),
+        x: utils.withGrid(0),
+        y: utils.withGrid(0),
         direction: "down"
       }),
       npcA: new Person({
@@ -226,7 +226,7 @@ window.OverworldMaps = {
       [utils.asGridCoord(5,10)]: [
         {
           events: [
-            { type: "changeMap", map: "DiningRoom", x: utils.withGrid(7), y: utils.withGrid(3), direction: "down" }
+            { type: "changeMap", map: "DiningRoom", x: 7, y: 3, direction: "down" }
           ]
         }
       ]
@@ -304,30 +304,15 @@ window.OverworldMaps = {
     cutsceneSpaces: {
       [utils.asGridCoord(7,3)]: [
         {
-          required: ["DOING_FIRST_CUTSCENE"],
           events: [
-            { type: "walk", who: "hero", direction: "down" }, 
-            { type: "textMessage", text: "What are you doing, we need to go to the reveal" }
-          ]
-        }, 
-        {
-          events: [
-            { type: "changeMap", map: "Kitchen", x: utils.withGrid(5), y: utils.withGrid(10), direction: "up" }
+            { type: "changeMap", map: "Kitchen", x: 5, y: 10, direction: "up" }
           ]
         }
-      ],
-      [utils.asGridCoord(7,4)]: [
-        {
-          required: ["DOING_FIRST_CUTSCENE"],
-          events: [
-    
-          ]
-        },
       ],
       [utils.asGridCoord(6, 12)]: [
         {
           events: [
-            { type: "changeMap", map: "Street", x: utils.withGrid(5), y: utils.withGrid(9), direction: "down" }
+            { type: "changeMap", map: "Street", x: 5, y: 9, direction: "down" }
           ]
         }
       ]

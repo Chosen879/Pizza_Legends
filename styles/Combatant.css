@@ -48,7 +48,7 @@
   left:-2px;
   top:-8px;
   white-space: nowrap;
-  background: var(--menu-font-color);
+   background: transparent /*var(--menu-font-color)*/;
   color: #fff;
   font-size: 5px; /*This is only so small because the component is scaled 2x in battle which is weird */
   padding-left: 2px;

@@ -13,6 +13,7 @@ class TutorialMenu {
         label: option.label,
         description: option.description,
         handler: () => {
+          playerState.addPizza('f001')
           this.close()
         }
       }
@@ -24,7 +25,7 @@ class TutorialMenu {
     this.element.classList.add("CraftingMenu");
     this.element.classList.add("overlayMenu");
     this.element.innerHTML = (`
-      <p>Use the arrow keys or WASD for movement, press enter or space to talk or interact</p>
+      <p>Use the arrow keys or WASD for movement, press enter or space to talk or interact, and use esc to open the menu.</p>
     `)
   }
 

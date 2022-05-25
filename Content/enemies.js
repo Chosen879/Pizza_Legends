@@ -1,4 +1,15 @@
 window.Enemies = {
+  "tutorial": {
+    name: "Erio",
+    src: "/images/characters/people/erio.png",
+    pizzas: {
+      "a": {
+        pizzaId: "s001",
+        maxHp: 50,
+        level: 1,
+      },
+    }
+  },
   "erio": {
     name: "Erio",
     src: "/images/characters/people/erio.png",

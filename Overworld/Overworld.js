@@ -104,7 +104,7 @@ class Overworld {
   this.titleScreen = new TitleScreen({
     progress: this.progress
   })
-  const useSaveFile = await this.titleScreen.init(container);
+  const useSaveFile = false //await this.titleScreen.init(container);
 
   //Potentially load saved data
   let initialHeroState = null;
@@ -137,29 +137,29 @@ class Overworld {
 
 
   this.map.startCutscene([
-    { type: "addStoryFlag", flag: "DOING_FIRST_CUTSCENE" },
-    {
-      type: "createGameObject",
-      name: "beth",
-      map: window.OverworldMaps[this.progress.mapId],
-      object: new Person({
-        src: "./images/characters/people/npc1.png",
-        x: utils.withGrid(5),
-        y: utils.withGrid(10),
-        direction: "up"
-      })
-    },
+    // { type: "addStoryFlag", flag: "DOING_FIRST_CUTSCENE" },
+    // {
+    //   type: "createGameObject",
+    //   name: "beth",
+    //   map: window.OverworldMaps[this.progress.mapId],
+    //   object: new Person({
+    //     src: "./images/characters/people/npc1.png",
+    //     x: utils.withGrid(5),
+    //     y: utils.withGrid(10),
+    //     direction: "up"
+    //   })
+    // },
     // { type: "textMessage", text: "(After many hours of training, your pizza making skills are nearly perfect)" },
     // { type: "textMessage", text: "(You have mastered the use of any topping, and you can knead dough any style thats ever been imagined)" },
-    { type: "walk", who: "beth", direction: "up" },
-    { type: "walk", who: "beth", direction: "up" },
-    { type: "walk", who: "beth", direction: "up" },
-    { type: "walk", who: "beth", direction: "up" },
-    { type: "walk", who: "beth", direction: "up" },
-    { type: "walk", who: "beth", direction: "right" },
-    { type: "walk", who: "beth", direction: "right" },
-    { type: "walk", who: "beth", direction: "right" },
-    { type: "walk", who: "beth", direction: "right" },
+    // { type: "walk", who: "beth", direction: "up" },
+    // { type: "walk", who: "beth", direction: "up" },
+    // { type: "walk", who: "beth", direction: "up" },
+    // { type: "walk", who: "beth", direction: "up" },
+    // { type: "walk", who: "beth", direction: "up" },
+    // { type: "walk", who: "beth", direction: "right" },
+    // { type: "walk", who: "beth", direction: "right" },
+    // { type: "walk", who: "beth", direction: "right" },
+    // { type: "walk", who: "beth", direction: "right" },
     // { type: "textMessage", text: "Beth: Dude, hurry up! The reveal is starting soon!!!"},
     // { type: "stand", who: "hero", direction: "left", wait: 200 },
     // { type: "walk", who: "beth", direction: "left" },
@@ -170,14 +170,27 @@ class Overworld {
     // { type: "walk", who: "beth", direction: "right"},
     // { type: "walk", who: "beth", direction: "right"},
     // { type: "walk", who: "beth", direction: "right"},
-    // { type: "textMessage", text: "Beth: Hello, my name is Beth" },
-    // { type: "textMessage", text: "You: Hello, my name is John" },
-    // { type: "textMessage", text: "You: Can you please tell me whats going on" },
+    // { type: "textMessage", text: "Beth: Sorry, my name is Beth" },
+    // { type: "textMessage", text: "You: It alright, my name is John, and can you please tell me what is happening" },
     // { type: "textMessage", text: "Beth: The biggest pizza company in the world just descovered the biggest piece of pizza tech in over 50 years"},
     // { type: "textMessage", text: "You: Oh, then I guess we should get a move on" },
-    { type: "changeMap", map: "DemoRoom", },
-    { type: "showTutorial"}
+    // { type: "changeMap", map: "DemoRoom", x: 5, y: 6, direction: "down"},
+    // { type: "showTutorial"},
+    // { type: "textMessage", text: "Welcome to the subspace, a zone where you will periodically be transported for tutorials"},
+    // { type: "textMessage", text: "Right now i will teach you how to battle you pizzas. You have been given a temporary pizza to help you learn"},
+    // { type: "battle", enemyId: "tutorial", arena: "demo-room", tutorial: true},
+    // { type: "textMessage", text: "Thats about all you need to know, good luck out there!!"},
+    { type: "changeMap", map: "Street", x: 21, y: 12, direction: "up"},
+    {
+      type: "createGameObject",
+      name: "beth",
+      object: new Person({
+        src: "./images/characters/people/npc1.png",
+        x: utils.withGrid(20),
+        y: utils.withGrid(12),
+        direction: "up",
+      })
+    },
   ])
-
  }
 }

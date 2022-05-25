@@ -152,6 +152,28 @@ class TurnCycle {
       type: "textMessage",
       text: `${this.battle.enemy.name} wants to throw down!`
     })
+    if (this.battle.tutorial === true) {
+      await this.onNewEvent({
+        type: "textMessage",
+        text: `This is a battle, this will be the main focus of the game`
+      })
+      await this.onNewEvent({
+        type: "textMessage",
+        text: `Lets start with you side, you will see submission menu where you will choose what you do`
+      })
+      await this.onNewEvent({
+        type: "textMessage",
+        text: `Then in the top left you will see the number of pizzas you have left`
+      })
+      await this.onNewEvent({
+        type: "textMessage",
+        text: `And right above your pizza you have its Hp, Xp, and Lvl`
+      })
+      await this.onNewEvent({
+        type: "textMessage",
+        text: `All of this info is the same for the enemy side`
+      })
+    }
 
     //Start the first turn!
     this.turn();

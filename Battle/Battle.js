@@ -1,9 +1,10 @@
 class Battle {
-  constructor({ enemy, onComplete, arena }) {
+  constructor({ enemy, onComplete, arena, tutorial}) {
 
     this.enemy = enemy;
     this.onComplete = onComplete;
     this.arena = arena;
+    this.tutorial = tutorial || false
 
     this.combatants = {
       // "player1": new Combatant({
