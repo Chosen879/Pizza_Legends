@@ -10,21 +10,32 @@ class PizzaStone extends GameObject {
       },
       currentAnimation: "used-down"
     });
-    this.storyFlag = config.storyFlag;
+    // this.storyFlag = config.storyFlag;
     this.pizzas = config.pizzas;
+    this.tutorial = config.tutorial || false
 
     this.talking = [
       {
-        required: [this.storyFlag],
+        required: [config.storyFlag],
         events: [
           { type: "textMessage", text: "You have already used this." },
+        ]
+      },
+      {
+        required: [this.tutorial],
+        events: [
+          { type: "textMessage", text: "Approaching the legendary pizza stone..." },
+          { type: "craftingMenu", pizzas: this.pizzas },
+          { type: "addStoryFlag", flag: config.storyFlag },
+          { type: "textMessage", text: "Crowd: Ohhhhhhhhh" },
+          { type: "textMessage", text: "The end(for now)" },
         ]
       },
       {
         events: [
           { type: "textMessage", text: "Approaching the legendary pizza stone..." },
           { type: "craftingMenu", pizzas: this.pizzas },
-          { type: "addStoryFlag", flag: this.storyFlag },
+          { type: "addStoryFlag", flag: config.storyFlag },
         ]
       }
     ]

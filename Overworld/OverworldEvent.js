@@ -162,7 +162,7 @@ class OverworldEvent {
     resolve()
   }
 
-  showTutorial(resolve) {
+  showTutorial1(resolve) {
     const menu = new TutorialMenu({
       onComplete: () => {
         resolve()

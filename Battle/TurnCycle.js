@@ -159,7 +159,7 @@ class TurnCycle {
       })
       await this.onNewEvent({
         type: "textMessage",
-        text: `Lets start with you side, you will see submission menu where you will choose what you do`
+        text: `Lets start with you side, you will see a submission menu where you will choose what you do`
       })
       await this.onNewEvent({
         type: "textMessage",
@@ -168,10 +168,6 @@ class TurnCycle {
       await this.onNewEvent({
         type: "textMessage",
         text: `And right above your pizza you have its Hp, Xp, and Lvl`
-      })
-      await this.onNewEvent({
-        type: "textMessage",
-        text: `All of this info is the same for the enemy side`
       })
     }
 
