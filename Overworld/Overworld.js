@@ -175,6 +175,11 @@ class Overworld {
     { type: "textMessage", text: "You: It alright, my name is John, and can you please tell me what is happening" },
     { type: "textMessage", text: "Beth: The biggest pizza company in the world just descovered the biggest piece of pizza tech in over 50 years"},
     { type: "textMessage", text: "You: Oh, then I guess we should get a move on" },
+    {
+      type: "deleteGameObject",
+      name: "beth",
+      map: window.OverworldMaps[this.progress.mapId],
+    },
     { type: "changeMap", map: "DemoRoom", x: 5, y: 6, direction: "down"},
     { type: "showTutorial1"},
     { type: "textMessage", text: "Welcome to the subspace, a zone where you will periodically be transported for tutorials"},

@@ -68,7 +68,17 @@
     <script src="/Battle/TurnCycle.js"></script>
     <script src="/Battle/BattleAnimations.js"></script>
 
-    <script src="Utis&other/init.js"></script>
+    <!-- <script src="Utis&other/init.js"></script> -->
+    <script>
+      (function () {
+
+      const overworld = new Overworld({
+        element: document.querySelector(".game-container")
+      });
+      overworld.init();
+
+      })();
+    </script>
 
   </body>
 </html>
