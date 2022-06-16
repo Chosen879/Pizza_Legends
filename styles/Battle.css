@@ -4,21 +4,21 @@
   right:0;
   top:0;
   bottom:0;
-  background-image: url(/images/maps/StreetBattle.png);
+  background-image: url(../images/maps/StreetBattle.png);
   background-size: cover;
   image-rendering: pixelated;
 }
 .Battle.green-kitchen {
-  background-image: url(/images/maps/GreenKitchenBattle.png);
+  background-image: url(../images/maps/GreenKitchenBattle.png);
 }
 .Battle.dining-room {
-  background-image: url(/images/maps/DiningRoomBattle.png);
+  background-image: url(../images/maps/DiningRoomBattle.png);
 }
 .Battle.kitchen {
-  background-image: url(/images/maps/KitchenBattle.png);
+  background-image: url(../images/maps/KitchenBattle.png);
 }
 .Battle.demo-room {
-  background-image: url(/images/maps/DemoBattle.png);
+  background-image: url(../images/maps/DemoBattle.png);
 }
 
 
@@ -29,7 +29,7 @@
   width: 32px;
   height: 32px;
   overflow: hidden;
-  background: url(/images/characters/shadow.png) no-repeat no-repeat;
+  background: url(../images/characters/shadow.png) no-repeat no-repeat;
 }
 .Battle_hero img, .Battle_enemy img {
   pointer-events: none;
