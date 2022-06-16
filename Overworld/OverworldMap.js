@@ -114,8 +114,8 @@ class OverworldMap {
 window.OverworldMaps = {
   DemoRoom: {
     id: "DemoRoom",
-    lowerSrc: "/images/maps/DemoLower.png",
-    upperSrc: "/images/maps/DemoUpper.png",
+    lowerSrc: "images/maps/DemoLower.png",
+    upperSrc: "images/maps/DemoUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -174,8 +174,8 @@ window.OverworldMaps = {
   },
   Kitchen: {
     id: "Kitchen",
-    lowerSrc: "/images/maps/KitchenLower.png",
-    upperSrc: "/images/maps/KitchenUpper.png",
+    lowerSrc: "images/maps/KitchenLower.png",
+    upperSrc: "images/maps/KitchenUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -234,8 +234,8 @@ window.OverworldMaps = {
   },
   DiningRoom: {
     id: "DiningRoom",
-    lowerSrc: "/images/maps/DiningRoomLower.png",
-    upperSrc: "/images/maps/DiningRoomUpper.png",
+    lowerSrc: "images/maps/DiningRoomLower.png",
+    upperSrc: "images/maps/DiningRoomUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -320,8 +320,8 @@ window.OverworldMaps = {
   },
   Street: {
     id: "Street",
-    lowerSrc: "/images/maps/StreetLower.png",
-    upperSrc: "/images/maps/StreetUpper.png",
+    lowerSrc: "images/maps/StreetLower.png",
+    upperSrc: "images/maps/StreetUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -431,8 +431,8 @@ window.OverworldMaps = {
   },
   DemoStreet: {
     id: "DemoStreet",
-    lowerSrc: "/images/maps/StreetLower.png",
-    upperSrc: "/images/maps/StreetUpper.png",
+    lowerSrc: "images/maps/StreetLower.png",
+    upperSrc: "images/maps/StreetUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
