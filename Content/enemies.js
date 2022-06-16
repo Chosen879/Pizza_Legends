@@ -5,9 +5,19 @@ window.Enemies = {
     pizzas: {
       "a": {
         pizzaId: "s001",
-        maxHp: 1,
+        maxHp: 50,
         level: 1,
       },
+      "b": {
+        pizzaId: "f001",
+        maxHp: 50,
+        level: 1,
+      },
+      "c": {
+        pizzaId: "v001",
+        maxHp: 50,
+        level: 1,
+      }
     }
   },
   "erio": {

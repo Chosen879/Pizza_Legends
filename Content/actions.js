@@ -47,6 +47,7 @@ window.Actions = {
   },
   item_recoverHp: {
     name: "Parmesan",
+    description: "A nice layer of cheese",
     targetType: "friendly",
     success: [
       { type:"textMessage", text: "{CASTER} sprinkles on some {ACTION}!", },

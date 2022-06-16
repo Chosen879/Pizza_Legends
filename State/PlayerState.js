@@ -6,6 +6,9 @@ class PlayerState {
       { actionId: "item_recoverHp", instanceId: "item1" },
       { actionId: "item_recoverHp", instanceId: "item2" },
       { actionId: "item_recoverHp", instanceId: "item3" },
+      { actionId: "item_recoverStatus", instanceId: "item4" },
+      { actionId: "item_recoverStatus", instanceId: "item5" },
+      { actionId: "item_recoverStatus", instanceId: "item6" },
     ]
     this.storyFlags = {};
   }

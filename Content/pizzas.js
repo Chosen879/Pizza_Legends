@@ -13,7 +13,7 @@ window.Pizzas = {
     type: PizzaTypes.chill,
     src: "images/characters/pizzas/c001.png",
     icon: "images/icons/chill.png",
-    actions: [ "chillStatus1", "damage1" ]
+    actions: [ "damage1", "saucyStatus", "clumsyStatus" ]
   },
   "c002": {
     name: "Chilling Cabbage",
@@ -21,7 +21,7 @@ window.Pizzas = {
     type: PizzaTypes.chill,
     src: "images/characters/pizzas/c002.png",
     icon: "images/icons/chill.png",
-    actions: [ "chillStatus1", "damage1" ]
+    actions: [ "damage1", "saucyStatus", "clumsyStatus" ]
   },
   "c003": {
     name: "Cold Cut Meats",
@@ -29,7 +29,7 @@ window.Pizzas = {
     type: PizzaTypes.chill,
     src: "images/characters/pizzas/c003.png",
     icon: "images/icons/chill.png",
-    actions: [ "chillStatus1", "damage1" ]
+    actions: [ "damage1", "saucyStatus", "clumsyStatus" ]
   },
   "s001": {
     name: "Slice Samurai",
@@ -37,7 +37,7 @@ window.Pizzas = {
     type: PizzaTypes.spicy,
     src: "images/characters/pizzas/s001.png",
     icon: "images/icons/spicy.png",
-    actions: [ "damage1" ],
+    actions: [ "damage1", "saucyStatus", "clumsyStatus" ],
   },
   "s002": {
     name: "Bacon Brigade",
@@ -61,7 +61,7 @@ window.Pizzas = {
     type: PizzaTypes.veggie,
     src: "images/characters/pizzas/v001.png",
     icon: "images/icons/veggie.png",
-    actions: [ "damage1" ],
+    actions: [ "damage1", "saucyStatus", "clumsyStatus" ],
   },
   "f001": {
     name: "Portobello Express",
@@ -69,6 +69,6 @@ window.Pizzas = {
     type: PizzaTypes.fungi,
     src: "images/characters/pizzas/f001.png",
     icon: "images/icons/fungi.png",
-    actions: [ "damage1" ],
+    actions: [ "damage1", "saucyStatus", "clumsyStatus" ],
   }
 }

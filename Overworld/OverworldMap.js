@@ -604,7 +604,8 @@ window.OverworldMaps = {
             })
           },
           { type: "stand", who: "Announcer", direction: "down"},
-          { type: "textMessage", text: "Announcer: This might just look like a ball of dough, but when someone creates a pizza with this dough the pizza becomes alive and you can battle them"},
+          { type: "textMessage", text: "Announcer: This might just look like a ball of dough"},
+          { type: "textMessage", text: "Announcer: But when someone creates a pizza with this dough the pizza becomes alive and you can battle them"},
           { type: "textMessage", text: "Announcer: Why you, standing in front of me, come use the dough and show the crowd"}
         ]
        }
@@ -639,7 +640,8 @@ window.OverworldMaps = {
            })
          },
          { type: "stand", who: "Announcer", direction: "down"},
-         { type: "textMessage", text: "Announcer: This might just look like a ball of dough, but when someone creates a pizza with this dough the pizza becomes alive and you can battle them"},
+         { type: "textMessage", text: "Announcer: This might just look like a ball of dough"},
+         { type: "textMessage", text: "Announcer: But when someone creates a pizza with this dough the pizza becomes alive and you can battle them"},
          { type: "textMessage", text: "Announcer: Why you, standing in front of me, come use the dough and show the crowd"}
        ]
       }
@@ -673,7 +675,8 @@ window.OverworldMaps = {
             })
          },
          { type: "stand", who: "Announcer", direction: "down"},
-         { type: "textMessage", text: "Announcer: This might just look like a ball of dough, but when someone creates a pizza with this dough the pizza becomes alive and you can battle them"},
+         { type: "textMessage", text: "Announcer: This might just look like a ball of dough"},
+         { type: "textMessage", text: "Announcer: But when someone creates a pizza with this dough the pizza becomes alive and you can battle them"},
          { type: "textMessage", text: "Announcer: Why you, standing in front of me, come use the dough and show the crowd"}
        ]
       }
@@ -706,7 +709,8 @@ window.OverworldMaps = {
         })
        },
        { type: "stand", who: "Announcer", direction: "down"},
-       { type: "textMessage", text: "Announcer: This might just look like a ball of dough, but when someone creates a pizza with this dough the pizza becomes alive and you can battle them"},
+       { type: "textMessage", text: "Announcer: This might just look like a ball of dough"},
+       { type: "textMessage", text: "Announcer: But when someone creates a pizza with this dough the pizza becomes alive and you can battle them"},
        { type: "textMessage", text: "Announcer: Why you, standing in front of me, come use the dough and show the crowd"}
       ]
      }
