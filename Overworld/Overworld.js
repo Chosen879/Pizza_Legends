@@ -104,7 +104,7 @@ class Overworld {
   this.titleScreen = new TitleScreen({
     progress: this.progress
   })
-  const useSaveFile = false //await this.titleScreen.init(container);
+  const useSaveFile = await this.titleScreen.init(container);
 
   //Potentially load saved data
   let initialHeroState = null;
@@ -183,11 +183,12 @@ class Overworld {
     { type: "changeMap", map: "DemoRoom", x: 5, y: 6, direction: "down"},
     { type: "showTutorial1"},
     { type: "textMessage", text: "Welcome to the subspace, a zone where you will periodically be transported for tutorials"},
-    { type: "textMessage", text: "Right now i will teach you how to battle you pizzas. You have been given a temporary pizza to help you learn"},
+    { type: "textMessage", text: "Right now I will teach you how to battle you pizzas. You have been given a temporary team to help you learn"},
     { type: "battle", enemyId: "tutorial", arena: "demo-room", tutorial: true},
     { type: "textMessage", text: "Thats about all you need to know, good luck out there!!"},
     { type: "changeMap", map: "Kitchen", x: 10, y: 5, direction: "up"},
-    { type: "textMessage", text: "What kinda dream was that, whatever, I need to get to the event!!!"}
+    { type: "textMessage", text: "What kinda dream was that..."},
+    { type: "textMessage", text: "Whatever, I need to get to the event!!!"}
   ])
  }
 }

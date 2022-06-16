@@ -44,6 +44,12 @@ const utils = {
       detail
     });
     document.dispatchEvent(event);
-  }
+  },
   
+  arrayRemove(arr, value) { 
+    
+    return arr.filter(function(ele){ 
+        return ele != value; 
+    });
+}
 }

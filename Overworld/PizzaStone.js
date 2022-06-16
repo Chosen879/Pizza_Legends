@@ -12,7 +12,6 @@ class PizzaStone extends GameObject {
     });
     // this.storyFlag = config.storyFlag;
     this.pizzas = config.pizzas;
-    this.tutorial = config.tutorial || false
 
     this.talking = [
       {
@@ -22,7 +21,7 @@ class PizzaStone extends GameObject {
         ]
       },
       {
-        required: [this.tutorial],
+        required: [config.tutorial],
         events: [
           { type: "textMessage", text: "Approaching the legendary pizza stone..." },
           { type: "craftingMenu", pizzas: this.pizzas },

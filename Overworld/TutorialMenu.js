@@ -14,6 +14,8 @@ class TutorialMenu {
         description: option.description,
         handler: () => {
           playerState.addPizza('f001')
+          playerState.addPizza('c001')
+          playerState.addPizza('s001')
           this.close()
         }
       }

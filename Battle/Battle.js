@@ -156,6 +156,12 @@ class Battle {
             }
           })
 
+          if (this.tutorial === true) {
+            playerState.removePizza("s001")
+            playerState.removePizza("c001")
+            playerState.removePizza("f001")
+          }
+
           //Get rid of player used items
           playerState.items = playerState.items.filter(item => {
             return !this.usedInstanceIds[item.instanceId]

@@ -20,17 +20,21 @@ class Hud {
     this.element.classList.add("Hud");
 
     const {playerState} = window;
-    playerState.lineup.forEach(key => {
-      const pizza = playerState.pizzas[key];
-      const scoreboard = new Combatant({
-        id: key,
-        ...Pizzas[pizza.pizzaId],
-        ...pizza,
-      }, null)
-      scoreboard.createElement();
-      this.scoreboards.push(scoreboard);
-      this.element.appendChild(scoreboard.hudElement);
-    })
+    
+    if(Object.keys(playerState.pizzas).length >= 1) {
+      playerState.lineup.forEach(key => {
+        const pizza = playerState.pizzas[key];
+        const scoreboard = new Combatant({
+          id: key,
+          ...Pizzas[pizza.pizzaId],
+          ...pizza,
+        }, null)
+        scoreboard.createElement();
+        this.scoreboards.push(scoreboard);
+        this.element.appendChild(scoreboard.hudElement);
+      })
+    }
+  
     this.update();
   }
 

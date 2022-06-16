@@ -27,6 +27,13 @@ window.Actions = {
       { type: "textMessage", text: "{TARGET} is slipping all around!"},
     ]
   },
+  chillStatus1: {
+    name: "Frezze",
+    description: "Frezze",
+    success: [
+      { type: "textMessage", text: "{CASTER} uses {ACTION}!"},
+    ]
+  },
   //Items
   item_recoverStatus: {
     name: "Heating Lamp",
